@@ -1,0 +1,61 @@
+html, body {
+  font-family: "Quicksand", sans-serif;
+  background-color: black;
+  color: black;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  flex-direction: column;
+  background-image: url("fundo.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+}
+
+button {
+  font-family: "Permanent Marker", cursive;
+  background-color: white;
+  border: solid 2px rgb(0,0,0);
+  border-radius: 200px;
+  font-size: 30px;
+  margin: 20px;
+  color: black;
+}
+
+.passo{
+  display: none;
+}
+
+.passo.ativo{
+  display: block;
+}
+
+main {
+  max-width: 90%;
+  text-align: center;
+  flex: 1;
+}
+
+img {
+  width: 700px;
+}
+
+footer {
+  color: rgb(0,0,0);
+  font-family:"Nanum Pen Script", cursive;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.nome-link {
+  font-family:"Nanum Pen Script", cursive;
+  color: black;
+  text-decoration: none;
+}
+
+.nome-link:hover {
+  text-decoration: underline;
+}
