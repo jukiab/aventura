@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- TOPO DA PÁGINA !-->  
+<head>
+
+<meta charset="UTF-8">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js"></script>
+  
+<link rel = "stylesheet" href = "style.css"> 
+  
+<!-- FONTE BOTÃO !-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  
+<!-- FONTE TEXTO !-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  
+<!-- FONTE RODAPÉ !-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Permanent+Marker&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  
+<!-- TÍTULO QUE FICA NO TOPO DA GUIA !-->
+<title> O MISTÉRIO DA ILHA PERDIDA </title>
+  
+</head>
+
+<!-- CORPO DA PÁGINA !-->
+<body>
+<main>
+
+<!-- PRIMEIRA TELA DE CARREGAMENTO !-->
+<div class="passo ativo" id="passo-0">
+<img src="logo.jpeg" alt="LOGO NORMAL">
+<p> Ayla Caccini, uma jovem com cabelos longos e lisos que caíam em ondas sobre suas costas, sempre sonhou com grandes aventuras no mar. Em uma manhã ensolarada, ela encontrou uma pista no chão, que por ventura, a convidava para participar de uma...</p>
+  
+<button class = "proximo" data-proximo = "1"> Busca ao Tesouro Pirata 🏝</button>
+
+<button class = "proximo" data-proximo = "2"> Expedição Científica 👩🏽‍🔬</button>
+</div>
+
+<!-- BOTÃO ESCOLHA 1!-->
+<div class="passo" id="passo-1">
+<img src="logo.jpeg" alt="LOGO NORMAL">
+<p> A pista que ela encontrou, a convidou para procurar um tesouro, também guardava um mapa antigo que leva a uma ilha esquecida, onde, segundo a lenda, um famoso pirata escondeu um imenso tesouro. Ao ler o mapa, ela percebe que deve seguir apenas uma das duas opções de caminho. Ela decide ir po caminho de... </p>
+  
+<button class = "proximo" data-proximo = "3"> Águas Perigosas 🌊</button>
+
+<button class = "proximo" data-proximo = "4"> Rota Segura 🙏🏽</button>
+</div>
+  
+<!-- BOTÃO ESCOLHA 2-->
+<div class="passo" id="passo-2">
+<img src="logo.jpeg" alt="LOGO NORMAL">
+<p> Próximo ao local onde encontrou a pista, Ayla encontra um diário de um cientista que descreve uma planta rara, capaz de curar doenças, localizada em uma ilha remota. Ela decide seguir esta expedição. No entanto, para encontrar essa planta, o cientista deixou enigmas na descrição de como encontra-lá, ele dizia ter deixado um rastro de pistas para ela seguir, mas que, ela poderia fazer uma abordagem direta. A garota decidiu... </p>
+  
+<button class = "proximo" data-proximo = "5"> Seguir O Rastro De Pistas 🍁</button>
+
+<button class = "proximo" data-proximo = "6"> Fazer Uma Abordagem Direta 🔎</button>
+</div>
+
+<!-- BOTÃO ESCOLHA 5-->
+<div class="passo" id="passo-5">
+<img src="logo.jpeg" alt="LOGO NORMAL">
+<p> Ayla deve seguir pistas deixadas pelo cientista. Isso envolve encontrar locais escondidos guiados através delas.</p>
+  
+<button class = "proximo" data-proximo = "7"> Encontrar Locais Escondidos 🤫</button>
+
+<button class = "proximo" data-proximo = "8"> Procurar Pistas Diferentes 🕊 </button>
+</div>
+
+
+<!-- BOTÃO ESCOLHA 6-->
+<div class="passo" id="passo-6">
+<img src="perdeu.jpeg" alt="IMAGEM PERDEU">
+<p> Ayla decide ir diretamente para a ilha e procurar a planta sem se preocupar com pistas. Como resultado, ela se perde, não encontra a planta e quando volta para a faixa de areia, seu barco havia naufragado, com esperança, ela tenta voltar nadando, mas, sem sucesso, acaba sendo devorada por um tubarão branco. </p>
+  
+<button class="proximo" data-proximo="0"> Reiniciar? 🕹 </button>
+
+</div>
+
+  
+<!-- BOTÃO ESCOLHA 7-->
+<div class="passo" id="passo-7">
+<img src="encontrou.jpeg" alt="IMAGEM GANHOU">
+<p>  Ayla encontra uma cachoeira, e, na sequência de pistas deixadas pelo caminho, ela foi guiada para um portal secreto atrás dela, assim que ela entrou, ela encontrou diversas unidades dessa planta e realizou uma descoberta científica valiosa, e seu nome, ficou falado por todod os cantos do planeta Terra. </p>
+  
+<button class="proximo" data-proximo="0"> Reiniciar? 🕹  </button>
+
+</div>
+  
+<!-- BOTÃO ESCOLHA 8-->
+<div class="passo" id="passo-8">
+<img src="logo.jpeg" alt="LOGO NORMAL">
+<p> A pista que ela encontrou, a convidou para procurar um tesouro, também guardava um mapa antigo que leva a uma ilha esquecida, onde, segundo a lenda, um famoso pirata escondeu um imenso tesouro. Ao ler o mapa, ela percebe que deve seguir apenas uma das duas opções de caminho. Ela decide ir po caminho de... </p>
+  
+<button class = "proximo" data-proximo = "3"> Águas Perigosas 🌊 </button>
+
+<button class = "proximo" data-proximo = "4"> Rota Segura 🙏 </button>
+</div>
+
+<!-- BOTÃO ESCOLHA 3-->
+<div class="passo" id="passo-3">
+<img src="logo.jpeg">
+<p> Ayla enfrenta uma série de desafios, incluindo tempestades e ataques de piratas rivais. Ela deve tomar decisões rápidas para sobreviver e continuar a busca. </p>
+  
+<button class="proximo" data-proximo="9"> Lutar Contra Os Piratas 🗡</button>
+<button class="proximo" data-proximo="10"> Se Esconder Em Um Container Do Navio 🚢 </button>
+</div>
+
+<!-- BOTÃO ESCOLHA 4-->
+<div class="passo" id="passo-4">
+<img src="encontrou.jpeg" alt="LOGO NORMAL">
+<p> Ayla evita perigos imediatos, mas pode chegar à ilha mais tarde que os rivais. Entretanto, os piratas não tinham acesso ao mapa, somente ela, então, ela cavou um buraco próximo a uma pequena lagoa de águas transparentes e encontrou o tesouro, se tornando assim, a pessoa mais rica do planeta Terra. </p>
+<button class = "proximo" data-proximo = "0"> Reiniciar? 🕹  </button>
+</div>
+
+<!-- BOTÃO ESCOLHA 9-->
+<div class="passo" id="passo-9">
+<img src="encontrou.jpeg" alt="IMAGEM GANHOU">
+<p> Ayla vai ao encontro dos piratas rivais com uma AK-47 que havia achado em um depósito dentro do navio. Ela acerta todos eles e os elimina. Assim, ela seguiu as instruções dadas pelo mapa, cavou um buraco próximo a uma pequena lagoa de águas transparentes e encontrou o tesouro, se tornando assim, a pessoa mais rica do planeta Terra.</p>
+<button class = "proximo" data-proximo = "0"> Reiniciar? 🕹  </button>
+</div>
+
+<!-- BOTÃO ESCOLHA 10-->
+<div class="passo" id="passo-10">
+<img src="perdeu.jpeg" alt="IMAGEM PERDEU">
+<p> Ayla se esconde em um container que encontrou na parte interna do navio. No entanto, ela não sabia que aquele container só abria por fora, então, ela acaba ficando presa nele, sem possibilidades de sobreviver. </p>
+<button class = "proximo" data-proximo = "0"> Reiniciar? 🕹  </button>
+</div>
+  
+</main>
+  
+<!-- CRÉDITOS -->
+<footer>
+<p> Jogo produzido por <a href="COLOCA O LINK DO SEU GITHUB" target="_blank" class="nome-link"> JULIA. </a> </p>
+</footer>
+  
+<script src="sketch.js"></script>
+  
+</body>
+
+</html>
